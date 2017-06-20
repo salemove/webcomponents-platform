@@ -67,6 +67,10 @@
       }
     }
     window.Event.prototype = origEvent.prototype;
+    var origPropertyNames = Object.getOwnPropertyNames(origEvent);
+    for (var i = 0; i < origPropertyNames.length; i++) {
+      window.Event[origPropertyNames[i]] = origEvent[origPropertyNames[i]];
+    }
   }
 
   if (!window.MouseEvent || isIE && (typeof window.MouseEvent !== 'function')) {
