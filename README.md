@@ -1,4 +1,8 @@
 # webcomponents-platform
+
+# ⚠️ THIS FORK IS DEPRECATED ⚠️ 
+# It'll be deleted in December 2025
+
 A set of basic platform polyfills needed by webcomponents.js, such as a
 constructable `CustomEvent` and basic ES6 shims (`Object.assign` and `Array.from`)
 
